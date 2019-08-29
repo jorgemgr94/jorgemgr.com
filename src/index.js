@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./containers/App/";
 import * as serviceWorker from "./serviceWorker";
-import "./assets/libs/bootstrap/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+
 import "./assets/libs/fontawesome-free/css/all.min.css";
 import "./assets/css/resume.css";
 
