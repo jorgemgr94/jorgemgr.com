@@ -7,6 +7,11 @@ const optinonsMenu = [
 		id: 1,
 		name: "About Me",
 		targetTag: "about"
+	},
+	{
+		id: 3,
+		name: "Work Exp",
+		targetTag: "experience"
 	}
 ];
 
@@ -46,8 +51,8 @@ function Navbar() {
 								to={option.targetTag}
 								spy={true}
 								smooth={true}
-								offset={50}
-								duration={500}
+								offset={0}
+								duration={700}
 							>
 								{option.name}
 							</Link>
