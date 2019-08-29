@@ -1,0 +1,54 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "jsx-quotes": [
+            "error",
+            "prefer-double"
+        ],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "react/no-deprecated": [
+            "error"
+        ],
+        "quotes": [
+            2,
+            "double"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "no-debugger": 2,
+        "brace-style": [
+            2,
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "no-trailing-spaces": 2,
+        "keyword-spacing": 2,
+        "space-before-function-paren": [
+            2,
+            "never"
+        ],
+        "vars-on-top": 2,
+        "spaced-comment": [
+            2,
+            "always"
+        ],
+        "guard-for-in": 2,
+        "no-eval": 2,
+        "no-with": 2,
+        "valid-typeof": 2,
+        "no-unused-vars": 2,
+        "no-continue": 1,
+        "no-extra-semi": 1,
+        "comma-dangle": "off",
+        "no-unreachable": 1,
+        "no-unused-expressions": 1,
+        "implicit-arrow-linebreak": "off"
+    }
+}
