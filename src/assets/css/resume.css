@@ -113,7 +113,8 @@ ul.margin-list > li {
   margin-bottom: 1em;
 }
 
-ul > li {
+ul > li,
+ol > li {
   color: #fff;
 }
 
