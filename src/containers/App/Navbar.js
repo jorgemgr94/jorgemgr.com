@@ -27,11 +27,6 @@ const optinonsMenu = [
 		id: 5,
 		name: "Lifestyle",
 		targetTag: "lifestyle"
-	},
-	{
-		id: 6,
-		name: "Goals",
-		targetTag: "goals"
 	}
 ];
 

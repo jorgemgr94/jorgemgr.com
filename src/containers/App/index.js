@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Social from "./Social";
 
 function App() {
 	return (
@@ -14,6 +15,8 @@ function App() {
 				<Skills />
 				<hr className="m-0" />
 				<Experience />
+				<hr className="m-0" />
+				<Social />
 				<hr className="m-0" />
 			</div>
 		</>

@@ -80,7 +80,7 @@ function formatDate(date) {
 function Experience() {
 	return (
 		<section
-			className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+			className="resume-section p-3 p-lg-5 d-flex align-items-center"
 			id="experience"
 		>
 			<div className="w-100">
