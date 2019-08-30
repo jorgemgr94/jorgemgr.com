@@ -17,11 +17,11 @@ function Skills() {
 					<li>Gitlab, AWS, Heroku, Docker, Eslint</li>
 				</ul>
 				<h3 className="mb-2">
-					Things I am learning or I'm looking to learn soon
+					Things I'm learning or I'm looking to learn soon
 				</h3>
 				<p className="mb-4">
 					Go, Jest, Terraform, TypeORM, Gitlab CI / CD, Kubernetes, GraphQl,
-					Devops, Django, Electron..
+					Devops, Django, Electron, Rust, Dart, Elixir, Web Assembly.
 				</p>
 				<h3 className="mb-2">Technologies I have used</h3>
 				<p className="mb-4">
