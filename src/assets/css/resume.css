@@ -113,6 +113,10 @@ ul.margin-list > li {
   margin-bottom: 1em;
 }
 
+ul > li {
+  color: #fff;
+}
+
 .fa-ol {
   margin-left: 2.5em;
   padding-left: 0;
