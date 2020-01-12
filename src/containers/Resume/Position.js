@@ -3,26 +3,26 @@ import { monthsNames, formatExperience } from "../../util/database";
 
 const Position = props => {
 	const {
-		img,
+		companyImg,
 		company,
-		position,
+		name,
 		startAt,
 		endAt,
 		description,
-		programming_languages
+		technicalEnv
 	} = props.data;
 
 	return (
 		<section style={{ marginLeft: "1em" }}>
 			<img
 				alt="x8"
-				src={img}
+				src={companyImg}
 				style={{ verticalAlign: "middle", height: "30px", marginRight: "5px" }}
 			/>
 			<div style={{ display: "inline-block", verticalAlign: "middle" }}>
 				<span className="primary-text">{company}</span>
 				<br />
-				<span className="primary-text">{position}</span>
+				<span className="primary-text">{name}</span>
 			</div>
 			<div
 				style={{
@@ -44,7 +44,7 @@ const Position = props => {
 			<p style={{ whiteSpace: "pre-wrap" }}>{description}</p>
 			<p>
 				<span>Technical Environment: </span>
-				{programming_languages.map(l => `${l.name}, `)}
+				{technicalEnv}
 			</p>
 		</section>
 	);

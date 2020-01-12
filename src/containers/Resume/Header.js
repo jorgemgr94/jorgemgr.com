@@ -1,12 +1,12 @@
 import React from "react";
-import { socialNetworks } from "../../util/database";
+import { socialIcons, aptitude } from "../../util/database";
 
 function Header() {
 	return (
 		<>
 			<header>
 				<section id="leftSection">
-					<div className="container">
+					<div className="container-fluid">
 						<img
 							alt="avatar"
 							className="avatar"
@@ -29,10 +29,19 @@ function Header() {
 								jorgemgr94@gmail.com
               				</a>
 						</section>
-						<div style={{ display: "flex", justifyContent: "space-around" }}>
-							{socialNetworks.map(social => {
+					</div>
+				</section>
+				<section id="rightSection">
+					<div className="container-fluid">
+						<span className="bold">APTITUDE</span>
+						<p>
+							{aptitude}
+						</p>
+						<div style={{ display: "flex", justifyContent: "flex-start" }}>
+							{socialIcons.map(social => {
 								return (
 									<a
+										className="mr-4"
 										rel="noopener noreferrer"
 										href={social.url}
 										target="_blank"
@@ -41,7 +50,7 @@ function Header() {
 										<div style={{ display: "inline-block" }}>
 											<img
 												alt={social.name}
-												style={{ width: 20 }}
+												style={{ width: 30 }}
 												src={social.img}
 											/>
 										</div>
@@ -49,28 +58,6 @@ function Header() {
 								);
 							})}
 						</div>
-					</div>
-				</section>
-				<section id="rightSection">
-					<div className="container">
-						<span className="bold">APTITUDE</span>
-						<p>
-							+5 years of experience in software development; I've worked with
-							startups, as well as small, mid and large companies, facing
-							several scopes in Products, like: Multiple timezones, Multiple
-							Languages, Work under pressure, Escalability, Highly sense of
-							responsibility, Fast learning.
-            			</p>
-						<p>
-							I love and believe in teamwork, smart work, best practices, home
-							office, leadership, priority, order, people first, quickly adapt
-							to change, new tech's, DevOps, startups.
-            			</p>
-						<p>
-							My short term expectation is to meet and work/collaborate with
-							extraordinary people and companies, passionate to change the world
-							in which we live.
-            			</p>
 					</div>
 				</section>
 			</header>

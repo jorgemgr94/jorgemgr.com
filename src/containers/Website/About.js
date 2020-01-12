@@ -1,5 +1,5 @@
 import React from "react";
-import { socialIcons } from "../../util/database";
+import { socialIcons, aptitude } from "../../util/database";
 
 function About() {
 	return (
@@ -16,16 +16,8 @@ function About() {
 					</span>
 				</div>
 				<p className="lead mb-5">
-					I've worked with startups, as well as small, mid and large companies,
-					facing several scopes in Products, like: Multiple timezones, Multiple
-					Languages, Escalability, Highly sense of responsibility, Fast
-					learning.
+					{aptitude}
 				</p>
-				<p className="lead mb-5">
-					I love and believe in teamwork, smart work, best practices, home
-					office, leadership, priority, order, people first, quickly adapt to
-					change, new tech's, DevOps, startups.
-        		</p>
 				<div className="social-icons">
 					{socialIcons.map(socialIcon => (
 						<a
@@ -37,9 +29,16 @@ function About() {
 							<i className={socialIcon.icon}></i>
 						</a>
 					))}
+					<a
+						href="/resume"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="far fa-file-pdf"></i>
+					</a>
 				</div>
 			</div>
-		</section>
+		</section >
 	);
 }
 

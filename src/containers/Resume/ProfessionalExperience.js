@@ -1,6 +1,6 @@
 import React from "react";
 import Position from "./Position";
-import { profesionalExperience } from "../../util/database";
+import { positions } from "../../util/database";
 
 const ProfessionalExperience = () => {
 	return (
@@ -8,8 +8,8 @@ const ProfessionalExperience = () => {
 			<span className="bold">PROFESSIONAL EXPERIENCE</span>
 			<br />
 			<br />
-			{profesionalExperience.map(position => {
-				return <Position key={position.id} data={position} />;
+			{positions.map((position, key) => {
+				return <Position key={key} data={position} />;
 			})}
 		</>
 	);

@@ -1,4 +1,5 @@
 import React from "react";
+import { technologies } from "../../util/database";
 
 const TechnicalExperience = () => {
 	return (
@@ -6,26 +7,33 @@ const TechnicalExperience = () => {
 			<div className="bold">TECHNICAL EXPERIENCE</div>
 			<ul className="list-unstyled">
 				<li>
-					<span className="primary-text">Current dev stack: </span>
-					ReactJs, Javascript, Typescript NodeJs, Ruby on Rails PostgreSQL,
-					MongoDb, Redis React Native Gitlab, AWS, Heroku, Docker, Eslint.
-          			<br />
-					<br />
-				</li>
-				<li>
-					<span className="primary-text">
-						Thing I'm learning or I'm looking to learn soon:{" "}
+					<span className="primary-text mr-1">
+						Current dev stack:
 					</span>
-					Go, Jest, Terraform, TypeORM, Gitlab CI / CD, Kubernetes, GraphQl, Dev
-					ops, Django, Electron, Rust, Dart, Elixir, Web Assembly.
-          			<br />
+					<span>
+						{technologies.filter(t => t.status === 0).map(t => `${t.name}, `)}
+					</span>
+					<br />
 					<br />
 				</li>
 				<li>
-					<span className="primary-text">Technologies I have used: </span>
-					Python, Laravel, VueJS, Php, Html5, CSS3, Android w/ Java, Android w/
-					Kotlin, IOS w/ Swift, MySql, MariaDB, SQL Server, Google Cloud, Bash.
-        		</li>
+					<span className="primary-text mr-1">
+						Thing I'm learning or I'm looking to learn soon:
+					</span>
+					<span>
+						{technologies.filter(t => t.status === 1).map(t => `${t.name}, `)}
+					</span>
+					<br />
+					<br />
+				</li>
+				<li>
+					<span className="primary-text mr-1">
+						Technologies I have used:
+					</span>
+					<span>
+						{technologies.filter(t => t.status === 2).map(t => `${t.name}, `)}
+					</span>
+				</li>
 			</ul>
 		</>
 	);

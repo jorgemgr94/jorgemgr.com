@@ -1,5 +1,5 @@
 import React from "react";
-import { positions } from "../../util/database";
+import { positions, formatExperience } from "../../util/database";
 
 const monthNames = [
 	"January",
@@ -29,26 +29,44 @@ function Experience() {
 		>
 			<div className="w-100">
 				<h2 className="mb-5">Work Exp</h2>
-
-				{positions.map(position => (
-					<div
-						key={position.id}
-						className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+				{positions.map((position, key) => (
+					<React.Fragment
+						key={key}
 					>
-						<div className="resume-content">
-							<h3 className="mb-0">{position.name}</h3>
-							<div className="subheading mb-3">{position.company}</div>
-							<p>{position.description}</p>
+						<div
+
+							className="resume-item d-flex flex-column flex-md-row justify-content-between"
+						>
+							<div className="resume-content">
+								<h3 className="mb-0">{position.name}</h3>
+								<div className="subheading mb-3">{position.company}</div>
+								<p>{position.technicalEnv}</p>
+							</div>
+							<div className="resume-date text-md-right">
+								<div>
+									{formatDate(position.startAt)} - {formatDate(position.endAt)}
+								</div>
+								<div>
+									{formatExperience(position.startAt, position.endAt)}
+								</div>
+							</div>
 						</div>
-						<div className="resume-date text-md-right">
-							<span className="text-primary">
-								{formatDate(position.startAt)} - {formatDate(position.endAt)}
-							</span>
+						<div className="mb-4">
+							<p>
+								<button className="btn btn-outline-light" type="button" data-toggle="collapse" data-target={`#collapseDescription${key}`} aria-expanded="false">
+									Read Experience and Achievements <i className="fas fa-trophy"></i>
+								</button>
+							</p>
+							<div className="collapse" id={`collapseDescription${key}`}>
+								<div className="card card-body bg-dark">
+									{position.description}
+								</div>
+							</div>
 						</div>
-					</div>
+					</React.Fragment>
 				))}
 			</div>
-		</section>
+		</section >
 	);
 }
 

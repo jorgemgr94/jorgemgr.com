@@ -4,12 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
-body {
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 @media (min-width: 992px) {
   .webpage {
     padding-top: 0;
@@ -18,7 +12,9 @@ body {
 }
 
 .webpage {
-  padding-top: 54px;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   color: #ccc;
   background-color: #142029;
 
@@ -132,6 +128,10 @@ body {
 
   ol.margin-list > li {
     margin-bottom: 1em;
+  }
+
+  .btn-outline-light:focus {
+    box-shadow: none;
   }
 
   @media (min-width: 992px) {

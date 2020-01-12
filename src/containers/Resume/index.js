@@ -7,7 +7,7 @@ function Resume() {
 	return (
 		<div className="resume">
 			<section className="paper">
-				<section className="container">
+				<section className="container-fluid">
 					<Header />
 					<main>
 						<TechnicalExperience />
