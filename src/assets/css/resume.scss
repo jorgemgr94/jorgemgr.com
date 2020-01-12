@@ -1,0 +1,76 @@
+.resume {
+  background: #f1f1f1;
+  color: #000000;
+  font-size: 0.95em;
+
+  .paper {
+    width: 216mm;
+    /*max-height: 279mm;*/
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    background: #fff;
+  }
+
+  .container {
+    padding: 0.5em;
+  }
+
+  .print-icon {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    cursor: pointer;
+  }
+
+  a.tel,
+  a.email {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  #leftSection {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  #rightSection {
+    width: 70%;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .avatar {
+    width: 110px;
+    border-radius: 110px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .primary-text {
+    font-weight: 500;
+  }
+
+  .list-unstyled {
+    list-style: none;
+  }
+
+  @media print {
+    body {
+      background: none;
+    }
+    .paper {
+      box-shadow: none;
+    }
+    .print-icon {
+      display: none;
+    }
+    .container {
+      padding: 0;
+    }
+  }
+}

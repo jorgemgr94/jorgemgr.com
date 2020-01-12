@@ -95,3 +95,76 @@ export const positions = [
       "Technical Environment: Php, Javascript, Android w/ Java, MySQL, Linux server administration, Bash,"
   }
 ];
+
+export const socialNetworks = [
+  {
+    id: 1,
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/jorgemgr94",
+    img: require("../assets/img/social/linkedin.png")
+  },
+  {
+    id: 2,
+    name: "Github",
+    url: "https://github.com/jorgemgr94",
+    img: require("../assets/img/social/github.png")
+  },
+  {
+    id: 3,
+    name: "Gitlab",
+    url: "https://gitlab.com/jorgemgr94",
+    img: require("../assets/img/social/gitlab.png")
+  }
+];
+
+export const socialIcons = [
+  {
+    id: 1,
+    icon: "fab fa-github",
+    url: "https://github.com/jorgemgr94"
+  },
+  {
+    id: 2,
+    icon: "fab fa-linkedin-in",
+    url: "https://www.linkedin.com/in/jorgemgr94/"
+  },
+  {
+    id: 3,
+    icon: "fab fa-gitlab",
+    url: "https://gitlab.com/jorgemgr94"
+  },
+  {
+    id: 4,
+    icon: "far fa-file-pdf",
+    url: "/resume"
+  }
+];
+
+export const monthsNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
+export function formatExperience(d1, d2) {
+  const MONTHS_IN_YEAR = 12;
+  const MONTHS_TO_YEAR = 3.8052e-10;
+
+  if (!d2) d2 = new Date();
+  let e = Math.floor((d2 - d1) * MONTHS_TO_YEAR);
+  if (e >= MONTHS_IN_YEAR) {
+    let months = e - Math.floor(e / MONTHS_IN_YEAR) * MONTHS_IN_YEAR;
+    return `${Math.floor(e / MONTHS_IN_YEAR)} year(s) ${months} month(s)`;
+  } else {
+    return `${e} month(s)`;
+  }
+}
