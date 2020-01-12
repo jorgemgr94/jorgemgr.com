@@ -21,7 +21,7 @@ function Header() {
 						<br />
 						<br />
 						<section style={{ marginBottom: 8 }}>
-							<a className="email" target="_blank" href="www.jorgemgr.com">
+							<a className="email" target="_blank" href="http://jorgemgr.com/">
 								www.jorgemgr.com
               				</a>
 							<br />
