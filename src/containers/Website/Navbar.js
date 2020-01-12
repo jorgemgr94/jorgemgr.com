@@ -1,34 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import profilePhoto from "../../assets/img/me.jpg";
-
-const optinonsMenu = [
-	{
-		id: 1,
-		name: "About Me",
-		targetTag: "about"
-	},
-	{
-		id: 2,
-		name: "Skills",
-		targetTag: "skills"
-	},
-	{
-		id: 3,
-		name: "Work Exp",
-		targetTag: "experience"
-	},
-	{
-		id: 4,
-		name: "Social",
-		targetTag: "social"
-	},
-	{
-		id: 5,
-		name: "Lifestyle",
-		targetTag: "lifestyle"
-	}
-];
+import { menu } from "../../util/database";
 
 function Navbar() {
 	return (
@@ -59,7 +32,7 @@ function Navbar() {
 			</button>
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav">
-					{optinonsMenu.map(option => (
+					{menu.map(option => (
 						<li className="nav-item" key={option.id}>
 							<Link
 								className="nav-link pointer"
