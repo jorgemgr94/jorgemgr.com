@@ -143,7 +143,7 @@ export const positions = [
 						<span role="img" aria-label="">◻️</span> Full-stack features development to front-end, back-end, and mobile app considering: scalability, multi-zones, multi-language.
 					</li>
 					<li>
-						<span role="img" aria-label="">◻️</span> Product definition on design, architecture, quality assurance, issues definition and puntuaction.
+						<span role="img" aria-label="">◻️</span> Product definition on design, architecture, quality assurance, issues definition and punctuation.
 					</li>
 					<li>
 						<span role="img" aria-label="">◻️</span> Write database queries.
