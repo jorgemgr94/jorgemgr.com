@@ -4,6 +4,7 @@ import { technologies } from "../../util/database";
 const TechnicalExperience = () => {
 	return (
 		<>
+			<br />
 			<div className="bold">TECHNICAL EXPERIENCE</div>
 			<ul className="list-unstyled">
 				<li>
@@ -18,7 +19,7 @@ const TechnicalExperience = () => {
 				</li>
 				<li>
 					<span className="primary-text mr-1">
-						Thing I'm learning or I'm looking to learn soon:
+						Things I'm learning or I'm looking to learn soon:
 					</span>
 					<span>
 						{technologies.filter(t => t.status === 1).map(t => `${t.name}, `)}

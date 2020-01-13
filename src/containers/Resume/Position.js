@@ -43,7 +43,6 @@ const Position = props => {
 			</div>
 			<p style={{ whiteSpace: "pre-wrap" }}>{description}</p>
 			<p>
-				<span>Technical Environment: </span>
 				{technicalEnv}
 			</p>
 		</section>

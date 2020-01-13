@@ -6,7 +6,7 @@ export const technologies = [
 	{ name: "Typescript", status: 0 },
 	{ name: "NodeJs", status: 0 },
 	{ name: "PostgreSQL", status: 0 },
-	{ name: "MongoDb", status: 0 },
+	{ name: "MongoDB", status: 0 },
 	{ name: "React Native", status: 0 },
 	{ name: "Gitlab", status: 0 },
 	{ name: "AWS", status: 0 },
@@ -23,7 +23,7 @@ export const technologies = [
 	{ name: "Gitlab CI / CD", status: 1 },
 	{ name: "Kubernetes", status: 1 },
 	{ name: "GraphQl", status: 1 },
-	{ name: "Devops", status: 1 },
+	{ name: "DevOps", status: 1 },
 	{ name: "Django", status: 1 },
 	{ name: "Electron", status: 1 },
 	{ name: "Rust", status: 1 },
@@ -49,62 +49,128 @@ export const technologies = [
 
 export const positions = [
 	{
-		name: "Consultant / Full Stack Developer",
-		description: "",
+		name: "Consultant / Full-stack Developer",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("02/01/2019"),
 		endAt: null,
+		description:
+			(<>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Full-stack features development to front-end, back-end, and mobile app.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Product definition on milestones, issues, architecture, quality assurance, design.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Testing, research, and development of new technologies (IoT)
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Code maintenance and improvement.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Software requirements collection and support to other consulting practices.
+					</li>
+				</ul>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I developed a platform called Dynamo, an IoT project
+						which consists in around 150 beacon tags sending real-time data about users position (latitude, longitude) in a CEDIS,
+						this information is visualized in a webpage and stored on a non-relational database (MongoDB) to do future Analitycs
+						about times and movements.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I incorporated new technologies that ensure quality
+						and scalability; besides, they bring innovation and dynamism which represents a competitive vantage.
+					</li>
+				</ul>
+			</>
+			),
 		technicalEnv:
 			(<>
-				Technical Environment: NodeJs, Ruby on Rails, Javascript, ReactJs, React Native, MySQL,
-				SQL Server, AWS, Git, SCRUM, Linux server administration, Jira,
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> React, React Native, Typescript, MongoDB, Node Js, Python,
+				Php, MySQL, Git, SCRUM, Google Cloud, AWS, Docker.
 			</>)
 	},
 	{
-		name: "Full Stack Developer (Remote, Part time)",
-		description: "",
+		name: "Full-stack Developer (Remote, Part time)",
 		companyImg: require("../assets/img/works/garage.png"),
 		company: "Garage (Startup)",
 		startAt: new Date("07/01/2019"),
 		endAt: new Date("12/31/2019"),
+		description:
+			(<>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Full-stack features development to front-end and back-end.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Product definition on milestones, issues, architecture, quality assurance, design.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Code maintenance and improvement.
+					</li>
+				</ul>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} />  I rewrote the back-end API and enabled the front-end, in order to manage
+						dynamic services in the Quoting process.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} />  I learned about containers (Docker), code replication (Migrations and Seeds),
+						automated testing (Jest, RSpec), DevOps (Gitlab CI/CD, Eslint) and SOLID principles.
+					</li>
+				</ul>
+			</>
+			),
 		technicalEnv:
 			(<>
-				Technical Environment: Ruby on Rails, Javascript, ReactJs, PostgreSQL, Heroku, Git, SCRUM, Docker, Gitlab,
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> Ruby on Rails, React, Jest, Mobx, Typescript, PostgreSQL, Heroku, Git, SCRUM,
+				Docker, Gitlab.
 			</>)
 	},
 	{
-		name: "Full Stack Developer",
+		name: "Full-stack Developer",
 		companyImg: require("../assets/img/works/sensai.jpg"),
-		company: "X8bit / SENSAI Empower Success (Startup) / Metalsa",
+		company: "SENSAI Empower Success (Startup) / Metalsa",
 		startAt: new Date("06/01/2018"),
 		endAt: new Date("02/01/2019"),
 		description:
 			(<>
-				Development of an integrated solution of the industry 4.0 that consists of reading
-				information from a Schuler PLC through the mqtt protocol with NodeJs, this with
-				the objective of getting relevant information about the press performance, such as
-				stoppages on the machine, run times, design speed, current status of the machine, etc.
-				<br />
-				The solution consists in a hybrid application (React native) which is managed by a operators
-				team of the machine, in this application the user can visualize production records of
-				past days, capture production records, identify stoppages by area, report of stoppages by area,
-				and real-time monitoring of the Schuler press. The registered stoppages as well as the information
-				that the operator captures are displayed on a web page (ReactJs) which contains reports per day,
-				detailed reports per hour, per run, as well as KPI indicators with graphs, this part of the solution
-				helps to take decisions instantly to administrative users, as well as monitor the production in real
-				time.
-				<br />
-				Another part of the solution is the ANDON screen, this screen is basically a mirror between
-				the machine and a TV screen placed on the floor, where shows the actual status of the press,
-				the production in process, etc. This project has scope to integrate technologies such as machine
-				learning, artificial intelligence to the prevention of failures and processes speed up.
-			</>),
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Full-stack features development to front-end, back-end, and mobile app considering: scalability, multi-zones, multi-language.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Product definition on design, architecture, quality assurance, issues definition and puntuaction.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Write database queries.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Code maintenance and improvement.
+					</li>
+				</ul>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} />  I lived what resilience is, as a startup,
+						SENSAI was in constantly and aggressive change; in October we had a one year and a half old product working,
+						then we had to migrate front-end, back-end, and database in just 3 months.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} />  I learned modern software development,
+						stages (development, staging, production) and to work with other departments like design and quality assurance.
+					</li>
+				</ul>
+
+			</>
+			),
 		technicalEnv:
 			(<>
-				Technical Environment: NodeJs, Ruby on Rails, Javascript, ReactJs, React Native, MySQL,
-				SQL Server, AWS, Git, SCRUM, Linux server administration, Jira,
-			</>),
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> React, React Native, Node Js, Ruby on Rails, MySQL,
+				SQL Server, AWS, Git, SCRUM, Jira, MQTT.
+			</>)
 	},
 	{
 		name: "Team Leader",
@@ -114,21 +180,46 @@ export const positions = [
 		endAt: new Date("08/01/2018"),
 		description: (
 			<>
-				Team Leader of a team of 5 software developers, my main activities were: Take meetings with the client for
-				software planning and requirements (ERP for Oncology purpose). Research, development, and implementation
-				of new technologies by company or client requirements (artificial intelligence, internet of things,
-				business intelligence, neural networks, machine learning, big data, DevOps) Project management,
-				Needs generation for clients, Priorities and Time management. Supervise and support in software
-				development, activities analysis and scheduling, quality assurance. AWS, Linux server administration,
-				and Shell scripting for libraries, backups, and structure of ERP (Bash) Process design, software
-				development and implementation of new work units on the ERP like Clinical Analysis Laboratory,
-				RIS & PACS and Ambulatory surgery.
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Lead a team of 5 software developers.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Testing, research, and development of new technologies (Git, Mobile, RIS & PACS)
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Software requirements collection and priorities planning.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Supervise solution definitions and designs (Process Diagram, UML, Database, Activities).
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Supervise and support in software development.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Bash scripts development to code refactoring and periodic processes.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Participation in recruitment processes
+					</li>
+				</ul>
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I managed and developed a competitive advantage strategy which consists
+						of change from selling the full medicine to selling it per gr/ml.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I managed and support the development of new business units like Analysis Laboratory, Ambulatory surgery, RIS & PACS.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I started the development of an IOS app for ambulatory surgery.
+					</li>
+				</ul>
 			</>
 		),
 		technicalEnv:
 			(<>
-				Technical Environment: Php, Javascript, ReactJs, Android w/ Kotlin, IOS w/ Swift, MySQL, AWS, Git,
-				Linux server administration, Bash,
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> Php, Html, CSS, Javascript, MySQL, Bash, AWS, React, Android w/ Kotlin, IOS w/ Swift, Git.
 			</>)
 	},
 	{
@@ -139,17 +230,44 @@ export const positions = [
 		endAt: new Date("10/01/2016"),
 		description: (
 			<>
-				Process and Database design, Priorities and Time management. Activities analysis and scheduling,
-				quality assurance. AWS, Linux server administration, and Shell scripting for libraries, backups,
-				and structure of ERP (Bash) Software development of new features to ERP for Oncology purpose which
-				consists in the complete Oncology process of a patient and the contact with the treatment center,
-				the process goes from appointment scheduling, management of event schedule, charges of medicines
-				and supplies by event, billing and stamping with PACS.
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Features and new modules development to the Oncology ERP (Custom software development).
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Software requirements collection.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Solution definition, design and validation (Process Diagram, UML, Database, Activities).
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} />  Priorities management and activities schedule.
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Bash scripts development to code refactoring and periodic processes.
+					</li>
+				</ul>
+
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I developed an automated quote through a software process
+						that connected doctors, nurses, and administrative considering: assignments, professional language of every position,
+						convert from the active substance with dose to medicine marks, clinic processes, etc.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I applied relational database concepts and
+						learned their importance in a real-world application with processes that go from quote to invoice.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I achieved the implementation of a metric
+						called "continuous improvement" which consists of implementing an innovative feature every quarter to the project.
+					</li>
+				</ul>
 			</>
 		),
 		technicalEnv:
 			(<>
-				Technical Environment: Php, Javascript, MySQL, AWS, Linux server administration, Bash,
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> Php, Html, CSS, Javascript, MySQL, Bash, AWS.
 			</>)
 	},
 	{
@@ -160,16 +278,37 @@ export const positions = [
 		endAt: new Date("01/01/2015"),
 		description: (
 			<>
-				Development of new features, fix of bugs and maintenance of the Ingeniat platform
-				and Android app (Java). Shell scripting for automated processes on Linux servers (Bash),
-				one of them consisted of reading a PDF (Book) separate it by pages, then covert the pages to SVG,
-				map page by page and upload to s3 after pass the SVG through a Regex who clean the SVG from certain
-				characters, creating a MySQL record in relation to the book and his pages.
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Bash scripts development to automate processes
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Features development to the web platform
+
+					</li>
+					<li>
+						<i class="fas fa-circle" style={{ fontSize: 7 }} /> Testing and research of new technologies (Mobile)
+
+					</li>
+					<li><i class="fas fa-circle" style={{ fontSize: 7 }} /> Support, maintenance and bug fixes to the web platform.</li>
+				</ul>
+
+				<ul className="list-unstyled">
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I developed an automation script for books uploading to the digital library, which consisted in convert a PDF into separate SVG files,
+						each SVG file was cleaned with regular expressions, then the files were uploaded to AWS S3, creating a relation between book,
+						pages and S3 links on MySQL.
+					</li>
+					<li>
+						<i class="fas fa-trophy" style={{ color: "#ffd504", fontSize: 10 }} /> I lost the fear of learning programming languages that I didn't know,
+						increased my learning curve allowing me to take part in the research and development of new technologies.
+					</li>
+				</ul>
 			</>
 		),
 		technicalEnv:
 			(<>
-				Technical Environment: Php, Javascript, Android w/ Java, MySQL, Linux server administration, Bash,
+				<i class="fas fa-code" style={{ fontSize: 10 }} /> Php, Html, CSS, Javascript, Android w/ Java, MySQL, Bash, AWS.
 			</>)
 	}
 ];
@@ -256,12 +395,10 @@ export const menu = [
 ];
 
 export const aptitude = (<>
-	I've worked with startups, as well as small, mid and large companies,
-	facing several scopes in Products, like: Multiple timezones, Multiple
-	Languages, Escalability, Highly sense of responsibility, Fast
-	learning.
+	I've worked with startups, as well as small, mid and large companies, facing several
+	scopes in Products, like Multi-zone, Multi-language, Scalability, Multi-Tenancy,
+	Configurability, Availability, Extendability, Highly sense of responsibility and Fast learning.
 	<br /><br />
-	I love and believe in teamwork, smart work, best practices, home
-	office, leadership, priority, order, people first, quickly adapt to
-	change, new tech's, DevOps, startups.
+	I love and believe in teamwork, smart work, best practices, collaboration, home office,
+	leadership, priority, order, people first, quickly adapt to change, new tech's.
 </>);

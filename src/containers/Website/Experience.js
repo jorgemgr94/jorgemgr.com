@@ -40,7 +40,6 @@ function Experience() {
 							<div className="resume-content">
 								<h3 className="mb-0">{position.name}</h3>
 								<div className="subheading mb-3">{position.company}</div>
-								<p>{position.technicalEnv}</p>
 							</div>
 							<div className="resume-date text-md-right">
 								<div>
@@ -52,15 +51,9 @@ function Experience() {
 							</div>
 						</div>
 						<div className="mb-4">
-							<p>
-								<button className="btn btn-outline-light" type="button" data-toggle="collapse" data-target={`#collapseDescription${key}`} aria-expanded="false">
-									Read Experience and Achievements <i className="fas fa-trophy"></i>
-								</button>
-							</p>
-							<div className="collapse" id={`collapseDescription${key}`}>
-								<div className="card card-body bg-dark">
-									{position.description}
-								</div>
+							<div className="card card-body bg-dark">
+								{position.description}
+								<div>{position.technicalEnv}</div>
 							</div>
 						</div>
 					</React.Fragment>
