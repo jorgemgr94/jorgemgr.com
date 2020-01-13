@@ -1,5 +1,6 @@
 {
-  "name": "demo",
+  "name": "my-site",
+  "homepage": "www.jorgemgr.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
