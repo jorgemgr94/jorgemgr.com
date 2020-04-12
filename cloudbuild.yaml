@@ -1,0 +1,10 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/brandsoft-273323/jorgemgr.com', '.']
+# Push the image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/brandsoft-273323/jorgemgr.com']
+# Manual Deploy image to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['run', 'deploy', 'jorgemgr.com', '--image', 'gcr.io/brandsoft-273323/jorgemgr.com', '--region', 'us-west1', '--platform', 'managed', '--allow-unauthenticated']
