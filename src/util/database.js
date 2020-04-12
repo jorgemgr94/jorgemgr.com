@@ -49,7 +49,7 @@ export const technologies = [
 
 export const positions = [
 	{
-		name: "Consultant / Full-stack Developer",
+		name: "Software Engineer / Consultant",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("02/01/2019"),
@@ -58,7 +58,7 @@ export const positions = [
 			(<>
 				<ul className="list-unstyled">
 					<li>
-						<span role="img" aria-label="">◻️</span> Full-stack features development to front-end, back-end, and mobile app.
+						<span role="img" aria-label="">◻️</span> Features development to front-end, back-end, and mobile app.
 					</li>
 					<li>
 						<span role="img" aria-label="">◻️</span> Product definition on milestones, issues, architecture, quality assurance, design.
@@ -94,7 +94,7 @@ export const positions = [
 			</>)
 	},
 	{
-		name: "Full-stack Developer (Remote, Part time)",
+		name: "Software Engineer (Remote, Part time)",
 		companyImg: require("../assets/img/works/garage.png"),
 		company: "Garage (Startup)",
 		startAt: new Date("07/01/2019"),
@@ -103,7 +103,7 @@ export const positions = [
 			(<>
 				<ul className="list-unstyled">
 					<li>
-						<span role="img" aria-label="">◻️</span> Full-stack features development to front-end and back-end.
+						<span role="img" aria-label="">◻️</span> Features development to front-end and back-end.
 					</li>
 					<li>
 						<span role="img" aria-label="">◻️</span> Product definition on milestones, issues, architecture, quality assurance, design.
@@ -131,7 +131,7 @@ export const positions = [
 			</>)
 	},
 	{
-		name: "Full-stack Developer",
+		name: "Software Engineer",
 		companyImg: require("../assets/img/works/sensai.jpg"),
 		company: "SENSAI Empower Success (Startup) / Metalsa",
 		startAt: new Date("06/01/2018"),
@@ -140,7 +140,7 @@ export const positions = [
 			(<>
 				<ul className="list-unstyled">
 					<li>
-						<span role="img" aria-label="">◻️</span> Full-stack features development to front-end, back-end, and mobile app considering: scalability, multi-zones, multi-language.
+						<span role="img" aria-label="">◻️</span> Features development to front-end, back-end, and mobile app considering: scalability, multi-zones, multi-language.
 					</li>
 					<li>
 						<span role="img" aria-label="">◻️</span> Product definition on design, architecture, quality assurance, issues definition and punctuation.
