@@ -11,7 +11,7 @@ function About() {
 				<h1>Hi, I'm Jorge García!</h1>
 				<div className="subheading mb-5">
 					<span role="img" aria-label="intro">
-						Software Developer 👨‍💻, Consultant 🏢, Geek 🤓, Gamer 🎮, Startups
+						Software Engineer 👨‍💻, Consultant 🏢, Geek 🤓, Gamer 🎮, Startups
 						lover 🚀 and more..
 					</span>
 				</div>

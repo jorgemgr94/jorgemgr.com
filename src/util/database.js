@@ -2,7 +2,6 @@ import React from "react";
 
 export const technologies = [
 	{ name: "React", status: 0 },
-	{ name: "Javascript", status: 0 },
 	{ name: "Typescript", status: 0 },
 	{ name: "NodeJs", status: 0 },
 	{ name: "PostgreSQL", status: 0 },
@@ -32,6 +31,7 @@ export const technologies = [
 	{ name: "Web Assembly", status: 1 },
 
 	{ name: "Laravel", status: 2 },
+	{ name: "Javascript", status: 2 },
 	{ name: "VueJS", status: 2 },
 	{ name: "Php", status: 2 },
 	{ name: "Html5", status: 2 },
@@ -49,7 +49,7 @@ export const technologies = [
 
 export const positions = [
 	{
-		name: "Software Engineer / Consultant",
+		name: "Software Engineer, Consultant",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("02/01/2019"),
@@ -173,7 +173,7 @@ export const positions = [
 			</>)
 	},
 	{
-		name: "Team Leader",
+		name: "Tech Lead",
 		companyImg: require("../assets/img/works/hms.png"),
 		company: "HMS Sistemas de Información / ONCARE",
 		startAt: new Date("10/01/2016"),
@@ -182,7 +182,7 @@ export const positions = [
 			<>
 				<ul className="list-unstyled">
 					<li>
-						<span role="img" aria-label="">◻️</span> Lead a team of 5 software developers.
+						<span role="img" aria-label="">◻️</span> Lead a team of 5 Software Engineers.
 					</li>
 					<li>
 						<span role="img" aria-label="">◻️</span> Testing, research, and development of new technologies (Git, Mobile, RIS & PACS)
@@ -223,7 +223,7 @@ export const positions = [
 			</>)
 	},
 	{
-		name: "Software Developer",
+		name: "Software Engineer",
 		companyImg: require("../assets/img/works/hms.png"),
 		company: "HMS Sistemas de Información / ONCARE",
 		startAt: new Date("01/01/2015"),
@@ -271,7 +271,7 @@ export const positions = [
 			</>)
 	},
 	{
-		name: "Software Developer",
+		name: "Software Engineer",
 		companyImg: require("../assets/img/works/ingeniat.png"),
 		company: "Ingeniat",
 		startAt: new Date("06/01/2014"),
