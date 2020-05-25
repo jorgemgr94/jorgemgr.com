@@ -7,11 +7,8 @@ export const technologies = [
 	{ name: "PostgreSQL", status: 0 },
 	{ name: "MongoDB", status: 0 },
 	{ name: "React Native", status: 0 },
-	{ name: "Gitlab", status: 0 },
 	{ name: "AWS", status: 0 },
-	{ name: "Heroku", status: 0 },
 	{ name: "Docker", status: 0 },
-	{ name: "Eslint", status: 0 },
 	{ name: "Google Cloud", status: 0 },
 	{ name: "Python", status: 0 },
 
@@ -30,7 +27,10 @@ export const technologies = [
 	{ name: "Elixir", status: 1 },
 	{ name: "Web Assembly", status: 1 },
 
-	{ name: "Laravel", status: 2 },
+	{ name: "Gitlab", status: 2 },
+	{ name: "Heroku", status: 2 },
+	{ name: "Eslint", status: 2 },
+  { name: "Laravel", status: 2 },
 	{ name: "Javascript", status: 2 },
 	{ name: "VueJS", status: 2 },
 	{ name: "Php", status: 2 },
