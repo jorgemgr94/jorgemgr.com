@@ -1,16 +1,21 @@
 # ./docker-compose.yml
 version: "3"
 
+networks:
+  front:
+
 services:
-  web:
-    container_name: jorgemgr.com
+  front:
+    container_name: jorgemgr.com-dev
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
       - "./:/app"
       - '/app/node_modules'
     ports:
       - "8080:80"
     environment:
+      - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
+    tty: true
