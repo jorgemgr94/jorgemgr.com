@@ -8,17 +8,17 @@ import {
 import Website from "./containers/Website";
 import Resume from "./containers/Resume";
 
-export default function App() {
+export default function App () {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/">
+				<Route exact path='/'>
 					<Website />
 				</Route>
-				<Route path="/resume">
+				<Route path='/resume'>
 					<Resume />
 				</Route>
-				<Redirect to="/" />
+				<Redirect to='/' />
 			</Switch>
 		</Router>
 	);

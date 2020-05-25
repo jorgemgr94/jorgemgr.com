@@ -3,11 +3,11 @@ import Header from "./Header";
 import ProfessionalExperience from "./ProfessionalExperience";
 import TechnicalExperience from "./TechnicalExperience";
 
-function Resume() {
+function Resume () {
 	return (
-		<div className="resume">
-			<section className="paper">
-				<section className="container-fluid">
+		<div className='resume'>
+			<section className='paper'>
+				<section className='container-fluid'>
 					<Header />
 					<main>
 						<TechnicalExperience />
@@ -15,8 +15,8 @@ function Resume() {
 					</main>
 
 					<img
-						alt="print"
-						className="print-icon"
+						alt='print'
+						className='print-icon'
 						onClick={window.print}
 						src={require("../../assets/img/print.png")}
 					/>

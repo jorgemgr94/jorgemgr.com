@@ -15,14 +15,14 @@ const Position = props => {
 	return (
 		<section style={{ marginLeft: "1em" }}>
 			<img
-				alt="x8"
+				alt='x8'
 				src={companyImg}
 				style={{ verticalAlign: "middle", height: "30px", marginRight: "5px" }}
 			/>
 			<div style={{ display: "inline-block", verticalAlign: "middle" }}>
-				<span className="primary-text">{company}</span>
+				<span className='primary-text'>{company}</span>
 				<br />
-				<span className="primary-text">{name}</span>
+				<span className='primary-text'>{name}</span>
 			</div>
 			<div
 				style={{
@@ -31,20 +31,18 @@ const Position = props => {
 					verticalAlign: "middle"
 				}}
 			>
-				<div className="primary-text">
+				<div className='primary-text'>
 					{`${monthsNames[startAt.getMonth()]} ${startAt.getFullYear()}`} –{" "}
 					{endAt
 						? `${monthsNames[endAt.getMonth()]} ${endAt.getFullYear()}`
 						: "Current"}
 				</div>
-				<div className="primary-text" style={{ textAlign: "right" }}>
+				<div className='primary-text' style={{ textAlign: "right" }}>
 					{formatExperience(startAt, endAt)}
 				</div>
 			</div>
 			<p style={{ whiteSpace: "pre-wrap" }}>{description}</p>
-			<p>
-				{technicalEnv}
-			</p>
+			<p>{technicalEnv}</p>
 		</section>
 	);
 };

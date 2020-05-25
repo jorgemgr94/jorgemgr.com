@@ -6,21 +6,21 @@ import Experience from "./Experience";
 import Social from "./Social";
 import Lifestyle from "./Lifestyle";
 
-function Website() {
+function Website () {
 	return (
-		<div className="webpage">
+		<div className='webpage'>
 			<Navbar />
-			<div className="container-fluid p-0">
+			<div className='container-fluid p-0'>
 				<About />
-				<hr className="m-0" />
+				<hr className='m-0' />
 				<Skills />
-				<hr className="m-0" />
+				<hr className='m-0' />
 				<Experience />
-				<hr className="m-0" />
+				<hr className='m-0' />
 				<Social />
-				<hr className="m-0" />
+				<hr className='m-0' />
 				<Lifestyle />
-				<hr className="m-0" />
+				<hr className='m-0' />
 			</div>
 		</div>
 	);

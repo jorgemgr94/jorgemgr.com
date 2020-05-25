@@ -16,42 +16,35 @@ const monthNames = [
 	"December"
 ];
 
-function formatDate(date) {
+function formatDate (date) {
 	if (!date) return "Current";
 	return `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
 }
 
-function Experience() {
+function Experience () {
 	return (
 		<section
-			className="resume-section p-3 p-lg-5 d-flex align-items-center"
-			id="experience"
+			className='resume-section p-3 p-lg-5 d-flex align-items-center'
+			id='experience'
 		>
-			<div className="w-100">
-				<h2 className="mb-5">Work Exp</h2>
+			<div className='w-100'>
+				<h2 className='mb-5'>Work Exp</h2>
 				{positions.map((position, key) => (
-					<React.Fragment
-						key={key}
-					>
-						<div
-
-							className="resume-item d-flex flex-column flex-md-row justify-content-between"
-						>
-							<div className="resume-content">
-								<h3 className="mb-0">{position.name}</h3>
-								<div className="subheading mb-3">{position.company}</div>
+					<React.Fragment key={key}>
+						<div className='resume-item d-flex flex-column flex-md-row justify-content-between'>
+							<div className='resume-content'>
+								<h3 className='mb-0'>{position.name}</h3>
+								<div className='subheading mb-3'>{position.company}</div>
 							</div>
-							<div className="resume-date text-md-right">
+							<div className='resume-date text-md-right'>
 								<div>
 									{formatDate(position.startAt)} - {formatDate(position.endAt)}
 								</div>
-								<div>
-									{formatExperience(position.startAt, position.endAt)}
-								</div>
+								<div>{formatExperience(position.startAt, position.endAt)}</div>
 							</div>
 						</div>
-						<div className="mb-4">
-							<div className="card card-body bg-dark">
+						<div className='mb-4'>
+							<div className='card card-body bg-dark'>
 								{position.description}
 								<div>{position.technicalEnv}</div>
 							</div>
@@ -59,7 +52,7 @@ function Experience() {
 					</React.Fragment>
 				))}
 			</div>
-		</section >
+		</section>
 	);
 }
 
