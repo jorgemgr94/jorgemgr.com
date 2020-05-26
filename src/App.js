@@ -1,6 +1,7 @@
 import React from "react";
 import {
 	BrowserRouter as Router,
+	HashRouter,
 	Switch,
 	Route,
 	Redirect
@@ -11,15 +12,17 @@ import Resume from "./containers/Resume";
 export default function App () {
 	return (
 		<Router>
-			<Switch>
-				<Route exact path='/'>
-					<Website />
-				</Route>
-				<Route path='/resume'>
-					<Resume />
-				</Route>
-				<Redirect to='/' />
-			</Switch>
+			<HashRouter>
+				<Switch>
+					<Route exact path='/'>
+						<Website />
+					</Route>
+					<Route path='/resume'>
+						<Resume />
+					</Route>
+					<Redirect to='/' />
+				</Switch>
+			</HashRouter>
 		</Router>
 	);
 }

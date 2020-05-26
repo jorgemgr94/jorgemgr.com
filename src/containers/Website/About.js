@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import { socialIcons, aptitude } from "../../util/database";
 
 function About () {
@@ -27,9 +29,9 @@ function About () {
 							<i className={socialIcon.icon}></i>
 						</a>
 					))}
-					<a href='/resume' target='_blank' rel='noopener noreferrer'>
+					<NavLink to='/resume' target='_blank'>
 						<i className='far fa-file-pdf'></i>
-					</a>
+					</NavLink>
 				</div>
 			</div>
 		</section>
