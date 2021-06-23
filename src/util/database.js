@@ -6,31 +6,30 @@ export const technologies = [
 	{ name: "NodeJs", status: 0 },
 	{ name: "PostgreSQL", status: 0 },
 	{ name: "MongoDB", status: 0 },
-	{ name: "React Native", status: 0 },
-	{ name: "AWS", status: 0 },
-	{ name: "Docker", status: 0 },
-	{ name: "Google Cloud", status: 0 },
+	{ name: "TypeORM", status: 0 },
 	{ name: "Python", status: 0 },
+	{ name: "Docker", status: 0 },
+	{ name: "DevOps", status: 0 },
+	{ name: "React Native", status: 0 },
+	{ name: "Google Cloud", status: 0 },
+	{ name: "AWS", status: 0 },
 
-	{ name: "Go", status: 1 },
+	{ name: "Kubernetes", status: 1 },
 	{ name: "Jest", status: 1 },
 	{ name: "Terraform", status: 1 },
-	{ name: "TypeORM", status: 1 },
-	{ name: "Gitlab CI / CD", status: 1 },
-	{ name: "Kubernetes", status: 1 },
 	{ name: "GraphQl", status: 1 },
-	{ name: "DevOps", status: 1 },
-	{ name: "Django", status: 1 },
-	{ name: "Electron", status: 1 },
-	{ name: "Rust", status: 1 },
-	{ name: "Dart", status: 1 },
-	{ name: "Elixir", status: 1 },
-	{ name: "Web Assembly", status: 1 },
+	// { name: "Go", status: 1 },
+	// { name: "Django", status: 1 },
+	// { name: "Electron", status: 1 },
+	// { name: "Rust", status: 1 },
+	// { name: "Dart", status: 1 },
+	// { name: "Elixir", status: 1 },
+	// { name: "Web Assembly", status: 1 },
 
 	{ name: "Gitlab", status: 2 },
 	{ name: "Heroku", status: 2 },
 	{ name: "Eslint", status: 2 },
-  { name: "Laravel", status: 2 },
+	{ name: "Laravel", status: 2 },
 	{ name: "Javascript", status: 2 },
 	{ name: "VueJS", status: 2 },
 	{ name: "Php", status: 2 },
@@ -49,50 +48,50 @@ export const technologies = [
 
 export const positions = [
 	{
-		name: "Software Engineer, Consultant",
+		name: "Tech Lead / Digital Solutions Manager at Sintec",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
-		startAt: new Date("02/01/2019"),
-		endAt: null,
+		startAt: new Date("01/02/2020"),
+		endAt: new Date("02/01/2020"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				{/* <ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Features development to front-end, back-end, and mobile app.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Product definition on milestones, issues, architecture, quality
 						assurance, design.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Testing, research, and development of new technologies (IoT)
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Code maintenance and improvement.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Software requirements collection and support to other consulting
 						practices.
 					</li>
-				</ul>
-				<ul className='list-unstyled'>
+				</ul> */}
+				{/* <ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I developed a platform called Dynamo, an IoT project which consists
@@ -102,7 +101,81 @@ export const positions = [
 						(MongoDB) to do future Analitycs about times and movements.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
+							🏆
+						</span>{" "}
+						I incorporated new technologies that ensure quality and scalability;
+						besides, they bring innovation and dynamism which represents a
+						competitive vantage.
+					</li>
+				</ul> */}
+			</>
+		),
+		technicalEnv: (
+			<>
+				<span role="img" aria-label="">
+					💻
+				</span>{" "}
+				React, Typescript, MongoDB, Node Js, Python, PostgreSQL, Git, SCRUM,
+				Google Cloud, AWS, Docker.
+			</>
+		)
+	},
+	{
+		name: "Software Engineer, Consultant",
+		companyImg: require("../assets/img/works/sintec.png"),
+		company: "SINTEC",
+		startAt: new Date("02/01/2019"),
+		endAt: new Date("02/01/2020"),
+		description: (
+			<>
+				<ul className="list-unstyled">
+					<li>
+						<span role="img" aria-label="">
+							◻️
+						</span>{" "}
+						Features development to front-end, back-end, and mobile app.
+					</li>
+					<li>
+						<span role="img" aria-label="">
+							◻️
+						</span>{" "}
+						Product definition on milestones, issues, architecture, quality
+						assurance, design.
+					</li>
+					<li>
+						<span role="img" aria-label="">
+							◻️
+						</span>{" "}
+						Testing, research, and development of new technologies (IoT)
+					</li>
+					<li>
+						<span role="img" aria-label="">
+							◻️
+						</span>{" "}
+						Code maintenance and improvement.
+					</li>
+					<li>
+						<span role="img" aria-label="">
+							◻️
+						</span>{" "}
+						Software requirements collection and support to other consulting
+						practices.
+					</li>
+				</ul>
+				<ul className="list-unstyled">
+					<li>
+						<span role="img" aria-label="">
+							🏆
+						</span>{" "}
+						I developed a platform called Dynamo, an IoT project which consists
+						in around 150 beacon tags sending real-time data about users
+						position (latitude, longitude) in a CEDIS, this information is
+						visualized in a webpage and stored on a non-relational database
+						(MongoDB) to do future Analitycs about times and movements.
+					</li>
+					<li>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I incorporated new technologies that ensure quality and scalability;
@@ -114,11 +187,11 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				React, React Native, Typescript, MongoDB, Node Js, Python, Php, MySQL,
-				Git, SCRUM, Google Cloud, AWS, Docker.
+				PostgreSQL, Git, SCRUM, Google Cloud, AWS, Docker.
 			</>
 		)
 	},
@@ -130,37 +203,37 @@ export const positions = [
 		endAt: new Date("12/31/2019"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Features development to front-end and back-end.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Product definition on milestones, issues, architecture, quality
 						assurance, design.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Code maintenance and improvement.
 					</li>
 				</ul>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I rewrote the back-end API and enabled the front-end, in order to
 						manage dynamic services in the Quoting process.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I learned about containers (Docker), code replication (Migrations
@@ -172,7 +245,7 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				Ruby on Rails, React, Jest, Mobx, Typescript, PostgreSQL, Heroku, Git,
@@ -188,37 +261,37 @@ export const positions = [
 		endAt: new Date("02/01/2019"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Features development to front-end, back-end, and mobile app
 						considering: scalability, multi-zones, multi-language.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Product definition on design, architecture, quality assurance,
 						issues definition and punctuation.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Write database queries.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Code maintenance and improvement.
 					</li>
 				</ul>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I lived what resilience is, as a startup, SENSAI was in constantly
@@ -227,7 +300,7 @@ export const positions = [
 						database in just 3 months.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I learned modern software development, stages (development, staging,
@@ -239,7 +312,7 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				React, React Native, Node Js, Ruby on Rails, MySQL, SQL Server, AWS,
@@ -255,55 +328,55 @@ export const positions = [
 		endAt: new Date("08/01/2018"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Lead a team of 5 Software Engineers.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Testing, research, and development of new technologies (Git, Mobile,
 						RIS & PACS)
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Software requirements collection and priorities planning.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Supervise solution definitions and designs (Process Diagram, UML,
 						Database, Activities).
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Supervise and support in software development.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Bash scripts development to code refactoring and periodic processes.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Participation in recruitment processes
 					</li>
 				</ul>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I managed and developed a competitive advantage strategy which
@@ -311,14 +384,14 @@ export const positions = [
 						gr/ml.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I managed and support the development of new business units like
 						Analysis Laboratory, Ambulatory surgery, RIS & PACS.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I started the development of an IOS app for ambulatory surgery.
@@ -328,7 +401,7 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				Php, Html, CSS, Javascript, MySQL, Bash, AWS, React, Android w/ Kotlin,
@@ -344,44 +417,44 @@ export const positions = [
 		endAt: new Date("10/01/2016"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Features and new modules development to the Oncology ERP (Custom
 						software development).
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Software requirements collection.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Solution definition, design and validation (Process Diagram, UML,
 						Database, Activities).
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Priorities management and activities schedule.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Bash scripts development to code refactoring and periodic processes.
 					</li>
 				</ul>
 
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I developed an automated quote through a software process that
@@ -391,7 +464,7 @@ export const positions = [
 						etc.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I applied relational database concepts and learned their importance
@@ -399,7 +472,7 @@ export const positions = [
 						invoice.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I achieved the implementation of a metric called "continuous
@@ -411,7 +484,7 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				Php, Html, CSS, Javascript, MySQL, Bash, AWS.
@@ -426,36 +499,36 @@ export const positions = [
 		endAt: new Date("01/01/2015"),
 		description: (
 			<>
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Bash scripts development to automate processes
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Features development to the web platform
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Testing and research of new technologies (Mobile)
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							◻️
 						</span>{" "}
 						Support, maintenance and bug fixes to the web platform.
 					</li>
 				</ul>
 
-				<ul className='list-unstyled'>
+				<ul className="list-unstyled">
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I developed an automation script for books uploading to the digital
@@ -465,7 +538,7 @@ export const positions = [
 						S3 links on MySQL.
 					</li>
 					<li>
-						<span role='img' aria-label=''>
+						<span role="img" aria-label="">
 							🏆
 						</span>{" "}
 						I lost the fear of learning programming languages that I didn't
@@ -477,7 +550,7 @@ export const positions = [
 		),
 		technicalEnv: (
 			<>
-				<span role='img' aria-label=''>
+				<span role="img" aria-label="">
 					💻
 				</span>{" "}
 				Php, Html, CSS, Javascript, Android w/ Java, MySQL, Bash, AWS.
@@ -489,17 +562,17 @@ export const positions = [
 export const socialIcons = [
 	{
 		id: 1,
-		name: "Linkedin",
+		name: "Github",
 		icon: "fab fa-github",
 		url: "https://github.com/jorgemgr94",
-		img: require("../assets/img/social/linkedin.png")
+		img: require("../assets/img/social/github.png")
 	},
 	{
 		id: 2,
-		name: "Github",
+		name: "Linkedin",
 		icon: "fab fa-linkedin-in",
 		url: "https://www.linkedin.com/in/jorgemgr94/",
-		img: require("../assets/img/social/github.png")
+		img: require("../assets/img/social/linkedin.png")
 	},
 	{
 		id: 3,
@@ -525,7 +598,7 @@ export const monthsNames = [
 	"December"
 ];
 
-export function formatExperience (d1, d2) {
+export function formatExperience(d1, d2) {
 	const MONTHS_IN_YEAR = 12;
 	const MONTHS_TO_YEAR = 3.8052e-10;
 
@@ -569,10 +642,10 @@ export const menu = [
 
 export const aptitude = (
 	<>
-		I've worked with startups, as well as small, mid and large companies, facing
-		several scopes in Products, like Multi-zone, Multi-language, Scalability,
-		Multi-Tenancy, Configurability, Availability, Extendability, Highly sense of
-		responsibility and Fast learning.
+		With +7 years of experiencie I've worked with startups, as well as small,
+		mid and large companies, facing several scopes and challenges in Products
+		like: Multi-zone, Multi-language, Scalability, Multi-Tenancy,
+		Configurability, Availability, Extendability, Security and Fast learning.
 		<br />
 		<br />I love and believe in teamwork, smart work, best practices,
 		collaboration, home office, leadership, priority, order, people first,
