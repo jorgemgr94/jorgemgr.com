@@ -48,7 +48,7 @@ export const technologies = [
 
 export const positions = [
 	{
-		name: "Tech Lead / Digital Solutions Manager at Sintec",
+		name: "Tech Lead / Digital Solutions Manager",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("01/02/2020"),
