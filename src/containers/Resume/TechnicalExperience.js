@@ -1,6 +1,5 @@
 import React from "react";
 import { technologies } from "../../util/database";
-import { technologies } from "./../../util/database";
 
 const TechnicalExperience = () => {
 	return (
