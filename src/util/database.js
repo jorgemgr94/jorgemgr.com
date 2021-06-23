@@ -52,7 +52,7 @@ export const positions = [
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("01/02/2020"),
-		endAt: new Date("02/01/2020"),
+		endAt: null,
 		description: (
 			<>
 				{/* <ul className="list-unstyled">
