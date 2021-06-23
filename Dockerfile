@@ -1,5 +1,5 @@
 # Build ENV, example of multistage build
-FROM node:latest as build
+FROM node:12.16.1 as build
 WORKDIR /app
 COPY . /app
 RUN yarn install
