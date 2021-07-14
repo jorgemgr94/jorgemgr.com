@@ -1,76 +1,70 @@
 import React from "react";
 
-function Lifestyle () {
+function Lifestyle() {
 	return (
 		<section
-			className='resume-section p-3 p-lg-5 d-flex align-items-center'
-			id='lifestyle'
+			className="resume-section p-3 p-lg-5 d-flex align-items-center"
+			id="lifestyle"
 		>
-			<div className='w-100'>
-				<h2 className='mb-5'>Lifestyle</h2>
-				<p className='lead mb-0'>
-					Because not everything is about software development.
+			<div className="w-100">
+				<h2 className="mb-5">Lifestyle</h2>
+				<p className="lead mb-4">
+					Because everything isn't about software development.. here are some
+					interest, topics, hobbies and fun facts about me:
 				</p>
-				<p className='lead mb-4'>
-					Let me share this interest topics, hobbies and fun facts about me:
-				</p>
-				<ol className='fa-ol mb-0 margin-list'>
+				<ol className="fa-ol mb-0 margin-list">
 					<li>
-						<span role='img' aria-label='intro'>
-							GOD first! thank you for everything you have given me.. 🙏
+						<span role="img" aria-label="intro">
+							GOD first, thank you for everything you have given me.. 🙏
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							Between so much technology, I appreciate much more the nature 🌳
+						<span role="img" aria-label="intro">
+							I enjoy a lot nature 🌳
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							I like to exercise (although sometimes I'm not constant) 💪
+						<span role="img" aria-label="intro">
+							I like running 🏃‍♂️ nowadays I'm on 20 kilometers per week.
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
+						<span role="img" aria-label="intro">
 							I like video games (but lately I don't have enough time to play)
 							🎮
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							I get excited about the challenges, I'm like Goku geek version 🧠
+						<span role="img" aria-label="intro">
+							I get excited about the challenges, I'm like the geek version of
+							Goku 🧠
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
+						<span role="img" aria-label="intro">
 							I like anime 🤓
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							Creedence, The Doors, Led Zeppelin, AC/DC etc.. or classical music
-							for software development 🎧
+						<span role="img" aria-label="intro">
+							When I'm developing I hear: Creedence, The Doors, Led Zeppelin,
+							Queen, AC/DC.. or classical music 🎧
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							I'm a crazy coffee lover ️️️️☕️
+						<span role="img" aria-label="intro">
+							I'm a coffee lover ️️️️☕️
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							Almost 9 years (and those who come) with the best woman in the
-							world.. Love you 👫
+						<span role="img" aria-label="intro">
+							I love to play soccer ⚽️
 						</span>
 					</li>
 					<li>
-						<span role='img' aria-label='intro'>
-							I like to play soccer ⚽️
-						</span>
-					</li>
-					<li>
-						<span role='img' aria-label='intro'>
-							My favorite genre for movies and series.. zombies 🧟
+						<span role="img" aria-label="intro">
+							After 10 years of relationship on 2021 I married with the best
+							woman in the world.. I love you 👫
 						</span>
 					</li>
 				</ol>

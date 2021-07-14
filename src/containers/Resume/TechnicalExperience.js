@@ -1,7 +1,7 @@
 import React from "react";
-import { technologies } from "../../util/database";
+import { technologies } from "../../database";
 
-const TechnicalExperience = () => {
+function TechnicalExperience() {
 	return (
 		<>
 			<br />
@@ -38,6 +38,6 @@ const TechnicalExperience = () => {
 			</ul>
 		</>
 	);
-};
+}
 
 export default TechnicalExperience;

@@ -1,12 +1,12 @@
 import React from "react";
 import Position from "./Position";
-import { positions } from "../../util/database";
+import { positions } from "../../database";
 
-const ProfessionalExperience = () => {
+function ProfessionalExperience() {
 	return (
 		<>
 			<br />
-			<span className='bold'>PROFESSIONAL EXPERIENCE</span>
+			<span className="bold">PROFESSIONAL EXPERIENCE</span>
 			<br />
 			<br />
 			{positions.map((position, key) => {
@@ -14,6 +14,6 @@ const ProfessionalExperience = () => {
 			})}
 		</>
 	);
-};
+}
 
 export default ProfessionalExperience;
